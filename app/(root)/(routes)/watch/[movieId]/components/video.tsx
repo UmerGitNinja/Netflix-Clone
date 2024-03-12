@@ -8,7 +8,7 @@ interface VideoProps {
 
 const Video: React.FC<VideoProps> = ({ MovieId }) => {
   const { data } = useMovies(MovieId as string);
-  const Movie: MoviesData = data;
+  const Movie = data;
   return (
     <video
       src={Movie?.videoUrl}
